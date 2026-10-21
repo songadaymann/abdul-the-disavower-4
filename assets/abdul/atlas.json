@@ -1,0 +1,279 @@
+{
+  "image": "abdul-sprites.png",
+  "size": {
+    "w": 1774,
+    "h": 887
+  },
+  "facing": "right",
+  "coordinateSystem": "Top-left source rectangles, pixel pivots measured from each rectangle's top-left. Draw each frame at worldOrigin minus pivot multiplied by scale. Flip around worldOrigin to face left.",
+  "animations": {
+    "idle": {
+      "loop": true,
+      "frames": [
+        {
+          "name": "idle-01",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 312
+          },
+          "pivot": {
+            "x": 150,
+            "y": 302
+          },
+          "duration": 180
+        },
+        {
+          "name": "idle-02",
+          "rect": {
+            "x": 296,
+            "y": 0,
+            "w": 296,
+            "h": 312
+          },
+          "pivot": {
+            "x": 150,
+            "y": 302
+          },
+          "duration": 180
+        },
+        {
+          "name": "idle-03",
+          "rect": {
+            "x": 592,
+            "y": 0,
+            "w": 296,
+            "h": 312
+          },
+          "pivot": {
+            "x": 150,
+            "y": 302
+          },
+          "duration": 180
+        },
+        {
+          "name": "idle-04",
+          "rect": {
+            "x": 888,
+            "y": 0,
+            "w": 296,
+            "h": 312
+          },
+          "pivot": {
+            "x": 150,
+            "y": 302
+          },
+          "duration": 180
+        },
+        {
+          "name": "idle-05",
+          "rect": {
+            "x": 1184,
+            "y": 0,
+            "w": 296,
+            "h": 312
+          },
+          "pivot": {
+            "x": 150,
+            "y": 302
+          },
+          "duration": 100
+        },
+        {
+          "name": "idle-06",
+          "rect": {
+            "x": 1480,
+            "y": 0,
+            "w": 294,
+            "h": 312
+          },
+          "pivot": {
+            "x": 150,
+            "y": 302
+          },
+          "duration": 180
+        }
+      ]
+    },
+    "run": {
+      "loop": true,
+      "frames": [
+        {
+          "name": "run-01",
+          "rect": {
+            "x": 0,
+            "y": 312,
+            "w": 296,
+            "h": 288
+          },
+          "pivot": {
+            "x": 150,
+            "y": 277
+          },
+          "duration": 90
+        },
+        {
+          "name": "run-02",
+          "rect": {
+            "x": 296,
+            "y": 312,
+            "w": 296,
+            "h": 288
+          },
+          "pivot": {
+            "x": 150,
+            "y": 277
+          },
+          "duration": 90
+        },
+        {
+          "name": "run-03",
+          "rect": {
+            "x": 592,
+            "y": 312,
+            "w": 296,
+            "h": 288
+          },
+          "pivot": {
+            "x": 150,
+            "y": 277
+          },
+          "duration": 90
+        },
+        {
+          "name": "run-04",
+          "rect": {
+            "x": 888,
+            "y": 312,
+            "w": 296,
+            "h": 288
+          },
+          "pivot": {
+            "x": 150,
+            "y": 277
+          },
+          "duration": 90
+        },
+        {
+          "name": "run-05",
+          "rect": {
+            "x": 1184,
+            "y": 312,
+            "w": 296,
+            "h": 288
+          },
+          "pivot": {
+            "x": 150,
+            "y": 277
+          },
+          "duration": 90
+        },
+        {
+          "name": "run-06",
+          "rect": {
+            "x": 1480,
+            "y": 312,
+            "w": 294,
+            "h": 288
+          },
+          "pivot": {
+            "x": 150,
+            "y": 277
+          },
+          "duration": 90
+        }
+      ]
+    },
+    "disavow": {
+      "loop": false,
+      "frames": [
+        {
+          "name": "disavow-01",
+          "rect": {
+            "x": 0,
+            "y": 600,
+            "w": 296,
+            "h": 287
+          },
+          "pivot": {
+            "x": 150,
+            "y": 270
+          },
+          "duration": 150
+        },
+        {
+          "name": "disavow-02",
+          "rect": {
+            "x": 296,
+            "y": 600,
+            "w": 296,
+            "h": 287
+          },
+          "pivot": {
+            "x": 150,
+            "y": 270
+          },
+          "duration": 110
+        },
+        {
+          "name": "disavow-03",
+          "rect": {
+            "x": 592,
+            "y": 600,
+            "w": 296,
+            "h": 287
+          },
+          "pivot": {
+            "x": 150,
+            "y": 270
+          },
+          "duration": 160
+        },
+        {
+          "name": "disavow-04",
+          "rect": {
+            "x": 888,
+            "y": 600,
+            "w": 296,
+            "h": 287
+          },
+          "pivot": {
+            "x": 150,
+            "y": 270
+          },
+          "duration": 90
+        },
+        {
+          "name": "disavow-05",
+          "rect": {
+            "x": 1184,
+            "y": 600,
+            "w": 356,
+            "h": 287
+          },
+          "pivot": {
+            "x": 150,
+            "y": 270
+          },
+          "duration": 160,
+          "event": "disavow-release"
+        },
+        {
+          "name": "disavow-06",
+          "rect": {
+            "x": 1540,
+            "y": 600,
+            "w": 234,
+            "h": 287
+          },
+          "pivot": {
+            "x": 90,
+            "y": 270
+          },
+          "duration": 180
+        }
+      ]
+    }
+  }
+}

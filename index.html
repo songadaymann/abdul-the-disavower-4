@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Abdul the Disavower — Sprite Preview</title>
+  <style>
+    :root { color-scheme: dark; --bg: #111821; --fg: #f2f0e8; --line: #53606b; --accent: #6fdcff; }
+    :root.light { color-scheme: light; --bg: #f2f0e8; --fg: #18212b; --line: #727d83; --accent: #00678b; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font-family: system-ui, sans-serif; }
+    main { max-width: 1280px; margin: 0 auto; padding: 32px 24px; }
+    header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+    h1 { font-size: 28px; line-height: 1.15; margin: 0; }
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; }
+    button, a { font: inherit; font-size: 16px; color: inherit; }
+    button { appearance: none; border: 1px solid var(--line); background: var(--bg); padding: 8px 12px; cursor: pointer; }
+    button:hover { border-color: var(--accent); color: var(--accent); }
+    button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .animations { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 32px 0; }
+    figure { margin: 0; min-width: 0; }
+    canvas { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+    figcaption { border-top: 1px solid var(--line); padding: 12px 0; font-size: 16px; }
+    footer { display: flex; flex-wrap: wrap; gap: 20px; font-size: 12px; border-top: 1px solid var(--line); padding-top: 20px; }
+    footer a { font-size: 12px; text-underline-offset: 3px; }
+    #status { font-size: 16px; }
+    @media (max-width: 700px) { main { padding: 24px 16px; } .animations { grid-template-columns: 1fr; gap: 16px; } canvas { max-width: 384px; margin: 0 auto; } }
+    @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Abdul the Disavower</h1>
+      <div class="controls" aria-label="Preview controls">
+        <button type="button" id="pause" aria-pressed="false">Pause</button>
+        <button type="button" id="direction" aria-pressed="false">Face left</button>
+        <button type="button" id="background" aria-pressed="false">Light background</button>
+      </div>
+    </header>
+    <p id="status" role="status">Loading sprites…</p>
+    <section class="animations" aria-label="Character animations">
+      <figure><canvas id="idle" width="384" height="320" role="img" aria-label="Abdul idle animation"></canvas><figcaption>Idle</figcaption></figure>
+      <figure><canvas id="run" width="384" height="320" role="img" aria-label="Abdul run animation"></canvas><figcaption>Run</figcaption></figure>
+      <figure><canvas id="disavow" width="384" height="320" role="img" aria-label="Abdul casting the disavow spell"></canvas><figcaption>Disavow</figcaption></figure>
+    </section>
+    <footer>
+      <a href="assets/abdul/abdul-sprites.png" download>Sprite sheet</a>
+      <a href="assets/abdul/atlas.json" download>Frame data</a>
+      <a href="assets/abdul/prompts.json" download>Generation prompts</a>
+    </footer>
+  </main>
+  <script type="module" src="preview.js"></script>
+</body>
+</html>
