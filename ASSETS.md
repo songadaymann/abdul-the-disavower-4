@@ -9,6 +9,7 @@ Original generated artwork commissioned by Jonathan Mann for this project is lic
 | Path | What it is | Made with | License |
 | --- | --- | --- | --- |
 | `assets/abdul/abdul-sprites.png` | Abdul El-Sayed idle, run, and fictional disavow spell sprite atlas | Built-in OpenAI image generation; original and refinement prompts in `assets/abdul/prompts.json` | CC BY 4.0 |
+| `assets/abdul/abdul-run-v2.png` | Corrected six-frame run with alternating near and far legs | Built-in OpenAI image generation; generation and composition prompts in `assets/abdul/run-v2-prompts.json` | CC BY 4.0 |
 
 ## 2. Free third-party: included under their own licenses
 

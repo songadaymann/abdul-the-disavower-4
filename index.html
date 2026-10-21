@@ -17,6 +17,7 @@
     button, a { font: inherit; font-size: 16px; color: inherit; }
     button { appearance: none; border: 1px solid var(--line); background: var(--bg); padding: 8px 12px; cursor: pointer; }
     button:hover { border-color: var(--accent); color: var(--accent); }
+    button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
     button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
     .animations { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 32px 0; }
     figure { margin: 0; min-width: 0; }
@@ -35,6 +36,7 @@
       <h1>Abdul the Disavower</h1>
       <div class="controls" aria-label="Preview controls">
         <button type="button" id="pause" aria-pressed="false">Pause</button>
+        <button type="button" id="slow-motion" aria-pressed="false">Slow motion</button>
         <button type="button" id="direction" aria-pressed="false">Face left</button>
         <button type="button" id="background" aria-pressed="false">Light background</button>
       </div>
@@ -46,7 +48,8 @@
       <figure><canvas id="disavow" width="384" height="320" role="img" aria-label="Abdul casting the disavow spell"></canvas><figcaption>Disavow</figcaption></figure>
     </section>
     <footer>
-      <a href="assets/abdul/abdul-sprites.png" download>Sprite sheet</a>
+      <a href="assets/abdul/abdul-run-v2.png" download>Run sheet</a>
+      <a href="assets/abdul/abdul-sprites.png" download>Idle &amp; spell sheet</a>
       <a href="assets/abdul/atlas.json" download>Frame data</a>
       <a href="assets/abdul/prompts.json" download>Generation prompts</a>
     </footer>
